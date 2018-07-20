@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="assets/images/web-design.png" type="image/x-icon">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- reset -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Timesheet</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- top  -->
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+      <h1 class="display-3">Timesheet</h1>
+      <p class="lead">Helping you with your billables</p>
+    </div>
+    <!-- FORM -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <form>
+            <h2>Add Client</h2>
+            <div class="form-group">
+              <label for="clientName">Client Name</label>
+              <input type="text" class="form-control" id="clientName">
+            </div>
+            <div class="form-group">
+              <label for="clientProject">Client Project</label>
+              <input type="text" class="form-control" id="clientProject">
+            </div>
+            <div class="form-group">
+              <label for="startDate">Project Start Date</label>
+              <input type="date" class="form-control" id="startDate" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="form-group">
+              <label for="monthlyRate">Monthly Rate</label>
+              <input type="text" class="form-control" id="monthlyRate">
+            </div>
+            <button type="submit" class="submit btn btn-outline-secondary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Table -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Current Projects</h2>
+          <table class="table billabeTable">
+            <thead>
+              <tr>
+                <th id="clientName">Client Name</th>
+                <th id="clientProject">Client Project</th>
+                <th id="startDate">Start Date</th>
+                <th id="monthsWorked">Months Worked</th>
+                <th id="monthlyRate">Monthly Rate ($)</th>
+                <th id="totalBilled">Total Billed ($)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">a</td>
+                <td>ab</td>
+                <td>abc</td>
+                <td>abcd</td>
+                <td>abcde</td>
+                <td>abcdef</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Bottom -->
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
